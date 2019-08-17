@@ -30,9 +30,9 @@ curl -X POST \
   -H 'X_AUTH_TOKEN: <authToken>' \
   -H 'cache-control: no-cache' \
   -d '{
-	"from": "+18504047705",
-	"to" : "+14086217522",
-	"text" : "Its a sample sms."
+	"from": "<from number>",
+	"to" : "<to number>",
+	"text" : "<sms body>"
 }'
 ```
 

@@ -1,10 +1,9 @@
-package com.mithunkhatri.twilio.smssender;
+package com.mithunkhatri.twilio.smssender.controllers;
 
+import com.mithunkhatri.twilio.smssender.models.SmsRequest;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.Message;
 import com.twilio.type.PhoneNumber;
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,13 +26,4 @@ public class SmsController {
 
         log.info("Sms sent. sid : " + message.getSid());
     }
-}
-
-@AllArgsConstructor
-@Data
-class SmsRequest {
-
-    private String from;
-    private String to;
-    private String text;
 }
